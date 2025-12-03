@@ -1,0 +1,1092 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media Query */
+@media (min-width: 769px) and (max-aspect-ratio: 1920/1050) {
+  html {
+    font-size: calc(100vw / 1920);
+  }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 1920/1050) {
+  html {
+    font-size: calc(100vh / 1050);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (max-aspect-ratio: 768/1024) {
+  html {
+    font-size: calc(100vw / 768);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (min-aspect-ratio: 768/1024) {
+  html {
+    font-size: calc(100vh / 1024);
+  }
+}
+
+@media (max-width: 480px) and (max-aspect-ratio: 480/1066.66) {
+  html {
+    font-size: calc(100vw / 480);
+  }
+}
+
+@media (max-width: 480px) and (min-aspect-ratio: 480/1066.66) {
+  html {
+    font-size: calc(100vh / 1066.66);
+  }
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Main Banner */
+main .home-banner {
+  width: 100%;
+  height: 80%vw;
+  position: relative;
+}
+
+main .home-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .home-banner .info-home-banner {
+  position: absolute;
+  top: 247rem;
+  left: 260rem;
+  width: 28%;
+}
+
+main .home-banner .info-home-banner .title-info-banner {
+  font-size: 36rem;
+  color: #68a47f;
+  margin-bottom: 8rem;
+  font-family: "Yellowtail";
+}
+
+main .home-banner .info-home-banner .detail-info-banner {
+  font-size: 70rem;
+  font-weight: 700;
+  color: #274c5b;
+  margin-bottom: 23rem;
+}
+
+main .home-banner .info-home-banner .view-info-banner {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26rem 39rem;
+  background-color: #efd372;
+  border-radius: 16rem;
+  gap: 10rem;
+}
+
+main .home-banner .info-home-banner .view-info-banner .view-text {
+  font-size: 20rem;
+  font-weight: 700;
+  color: #274c5b;
+}
+
+main .home-banner .info-home-banner .view-info-banner .view-icon {
+  width: 19rem;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #274c5b;
+  border-radius: 50%;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Sub Banner */
+main .home-sub-banner {
+  position: relative;
+  border-radius: 16rem;
+  overflow: hidden;
+  width: 100%;
+  height: 687rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36rem;
+}
+
+main .home-sub-banner .sub-banner-item {
+  position: relative;
+  width: 682rem;
+  height: 367rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+main .home-sub-banner .sub-banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .home-sub-banner .sub-banner-item .info-sub-banner-item {
+  position: absolute;
+  top: 109rem;
+  left: 54rem;
+}
+
+main
+  .home-sub-banner
+  .sub-banner-item
+  .info-sub-banner-item
+  .title-info-sub-banner {
+  font-family: "Yellowtail";
+  font-size: 36rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+main
+  .home-sub-banner
+  .sub-banner-item
+  .info-sub-banner-item
+  .detail-info-sub-banner {
+  font-size: 40rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+main
+  .home-sub-banner
+  .sub-banner-item:last-child
+  .info-sub-banner-item
+  .title-info-sub-banner,
+main
+  .home-sub-banner
+  .sub-banner-item:last-child
+  .info-sub-banner-item
+  .detail-info-sub-banner {
+  color: #68a47f;
+}
+
+/* About */
+main .about-block {
+  position: relative;
+  width: 100%;
+  height: 1067rem;
+  background-color: #f9f8f8;
+}
+
+main .about-block img.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .about-block .info-about {
+  position: absolute;
+  top: 186rem;
+  right: 183rem;
+  width: 702rem;
+}
+
+main .about-block .info-about p.name-category {
+  font-family: "Yellowtail";
+  font-size: 36rem;
+  font-weight: 400;
+  color: #68a47f;
+  margin-bottom: 8rem;
+}
+
+main .about-block .info-about p.title-about {
+  font-size: 50rem;
+  font-weight: 800;
+  color: #274c5b;
+  margin-bottom: 14rem;
+}
+
+main .about-block .info-about p.description-about {
+  font-size: 18rem;
+  font-weight: 400;
+  color: #525c60;
+  margin-bottom: 46rem;
+  text-align: justify;
+  line-height: 165%;
+}
+
+main .about-block .info-about ul.list-info-about {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 46rem;
+  width: 564rem;
+}
+
+main .about-block .info-about ul.list-info-about li.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  margin-bottom: 30rem;
+}
+
+main .about-block .info-about ul.list-info-about li.info-item img {
+  display: inline-block;
+  width: 101rem;
+  height: 101rem;
+  object-fit: cover;
+}
+
+main
+  .about-block
+  .info-about
+  ul.list-info-about
+  li.info-item
+  .text-block
+  .title-text {
+  font-size: 25rem;
+  font-weight: 800;
+  color: #274c5b;
+  margin-bottom: 7rem;
+}
+
+main
+  .about-block
+  .info-about
+  ul.list-info-about
+  li.info-item
+  .text-block
+  .detail-text {
+  font-size: 18rem;
+  font-weight: 400;
+  color: #525c60;
+  line-height: 165%;
+}
+
+.view-more {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26rem 49rem;
+  background-color: #274c5b;
+  border-radius: 16rem;
+  gap: 10rem;
+}
+
+.view-more .view-more-text {
+  font-size: 20rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.view-more .view-more-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10rem;
+  font-weight: 700;
+}
+
+/* Product */
+.product {
+  width: 73%;
+  padding: 160rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product p.name-category {
+  font-family: "Yellowtail";
+  font-size: 36rem;
+  font-weight: 400;
+  color: #68a47f;
+  margin-bottom: 8rem;
+}
+
+.product p.title-section {
+  font-size: 50rem;
+  font-weight: 800;
+  color: #274c5b;
+  margin-bottom: 40rem;
+}
+
+ul.list-product {
+  width: 100%;
+  margin: 40rem 0 60rem 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.list-product li.product-item {
+  position: relative;
+  padding: 17rem 0;
+  border-radius: 30rem;
+  overflow: hidden;
+  background-color: #f9f8f8;
+  flex-basis: 24%;
+  margin-bottom: 20rem;
+}
+
+ul.list-product li.product-item span.product-category {
+  padding: 5rem 12rem;
+  background-color: #274c5b;
+  color: #fff;
+  border-radius: 8rem;
+  position: absolute;
+  top: 30rem;
+  left: 30rem;
+  font-size: 15rem;
+}
+
+ul.list-product li.product-item img.product-img {
+  display: block;
+  margin-top: 73rem;
+  width: 100%;
+  height: 252rem;
+  object-fit: contain;
+}
+
+ul.list-product li.product-item h4.product-name {
+  margin-top: 5rem;
+  padding: 0 26rem;
+  font-size: 20rem;
+  color: #274c5b;
+  font-weight: 600;
+  margin-bottom: 13rem;
+}
+
+ul.list-product li.product-item .product-more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 26rem;
+  padding: 6rem 0;
+  border-top: 1rem solid #dedddd;
+}
+
+ul.list-product
+  li.product-item
+  .product-more-info
+  .product-price
+  span:first-child {
+  font-size: 15rem;
+  font-weight: 600;
+  color: #b8b8b8;
+  margin-right: 7rem;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+ul.list-product
+  li.product-item
+  .product-more-info
+  .product-price
+  span:last-child {
+  font-size: 18rem;
+  font-weight: 600;
+  color: #274c5b;
+  font-weight: 600;
+}
+
+ul.list-product li.product-item .product-more-info ul.votes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul.list-product li.product-item .product-more-info ul.votes li.star-vote {
+  font-size: 19rem;
+  color: #ffa858;
+}
+
+/* Review */
+.review {
+  width: 100%;
+  height: 1266rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/background-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.review .info-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 780rem;
+  margin-bottom: 102rem;
+}
+
+.review .info-review p.review-category {
+  font-family: "Yellowtail";
+  font-size: 36rem;
+  font-weight: 400;
+  color: #68a47f;
+  margin-bottom: 8rem;
+}
+
+.review .info-review p.title-review {
+  font-size: 50rem;
+  font-weight: 800;
+  color: #274c5b;
+  margin-bottom: 60rem;
+}
+
+.review .info-review .thumb-customer {
+  width: 115rem;
+  height: 115rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20rem;
+}
+
+.review .info-review .thumb-customer img.photo-customer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review .info-review .star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25rem;
+}
+
+.review .info-review .star-rating .star-item {
+  font-size: 26rem;
+  color: #ffa858;
+}
+
+.review .info-review p.description-review {
+  font-size: 18rem;
+  font-weight: 400;
+  color: #525c60;
+  margin-bottom: 20rem;
+  text-align: center;
+  line-height: 165%;
+}
+
+.review .info-review .name-customer {
+  font-size: 25rem;
+  font-weight: 600;
+  color: #274c5b;
+}
+
+.review .info-review .customer-role {
+  font-size: 15rem;
+  font-weight: 400;
+  color: #525c60;
+  margin-bottom: 19rem;
+  line-height: 165%;
+}
+
+.review .info-review .slide-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.review .info-review .slide-dot .dot {
+  width: 8rem;
+  height: 8rem;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+}
+
+.review .data-review {
+  width: 1108rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 73rem;
+}
+
+.review .data-review .data-review-item {
+  height: 211rem;
+  width: 211rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #7eb693;
+}
+
+.review .data-review .data-review-item .detail-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #274c5b;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 95%;
+  height: 95%;
+}
+
+.review .data-review .data-review-item .detail-data .data-quantity {
+  font-size: 50rem;
+  font-weight: 800;
+}
+
+.review .data-review .data-review-item .detail-data .data-type {
+  font-size: 18rem;
+  font-weight: 600;
+  line-height: 165%;
+}
+
+/* Offer */
+.offer {
+  height: 1038rem;
+  width: 100%;
+  background-color: #274c5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer .offer-info {
+  width: 1400rem;
+}
+
+.offer .offer-info .text-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50rem;
+}
+
+.offer .offer-info .text-offer .offer-info-text .offer-category,
+.econis .info-econis .econis-category {
+  font-family: "Yellowtail";
+  font-size: 36rem;
+  font-weight: 400;
+  color: #68a47f;
+  margin-bottom: 8rem;
+}
+
+.offer .offer-info .text-offer .offer-info-text .title-offer {
+  font-size: 50rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.offer .offer-info .text-offer .show-more .view-more {
+  background-color: #efd372;
+}
+
+.offer .offer-info .text-offer .show-more .view-more .view-more-text {
+  color: #274c5b;
+}
+
+.offer .offer-info .text-offer .show-more .view-more .view-more-icon {
+  width: 19rem;
+  height: 19rem;
+  background-color: #274c5b;
+}
+
+/* Econis */
+.econis {
+  width: 100%;
+  height: 1006rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 43rem;
+}
+
+.econis .thumb {
+  width: 50%;
+  height: 100%;
+}
+
+.econis .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.econis .info-econis .econis-title {
+  font-size: 50rem;
+  font-weight: 800;
+  color: #274c5b;
+  margin-bottom: 35rem;
+}
+
+.econis .info-econis .list-econis .econis-item {
+  width: 635rem;
+  margin-bottom: 35rem;
+}
+
+.econis .info-econis .list-econis .econis-item .title {
+  font-size: 25rem;
+  font-weight: 500;
+  color: #274c5b;
+  margin-bottom: 7rem;
+}
+
+.econis .info-econis .list-econis .econis-item .description {
+  font-size: 18rem;
+  font-weight: 400;
+  color: #525c60;
+  line-height: 165%;
+}
+
+/* Options */
+.other-option {
+  height: 824rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f8f4;
+}
+
+.other-option .option-item {
+  width: 612rem;
+  height: 583rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-option .option-item:first-child {
+  background-image: url("./images/option-1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-option .option-item:nth-child(2) {
+  background-image: url("./images/option-2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-option .option-item:last-child {
+  background-image: url("./images/option-3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-option .option-item .name-option {
+  font-size: 25rem;
+  font-weight: 500;
+  color: #274c5b;
+  background-color: #fff;
+  padding: 31rem 79rem;
+  border-radius: 20rem;
+}
+
+/* 
+-----------------------------------
+    Laptop (Max-width: 1200px) 
+----------------------------------- 
+*/
+
+@media screen and (max-width: 1200px) {
+  main,
+  main .home-banner,
+  main .home-sub-banner,
+  main .about-block,
+  .offer,
+  .econis,
+  .other-option {
+    height: auto !important;
+  }
+
+  .review,
+  .offer,
+  .econis,
+  .other-option {
+    padding-top: 60rem;
+    padding-bottom: 60rem;
+  }
+  .home-sub-banner {
+    padding: 26rem 0;
+  }
+}
+
+/* 
+---------------------------------------------
+    TABLET & LAPTOP (Max-width: 1024px) 
+---------------------------------------------
+*/
+
+@media screen and (max-width: 1024px) {
+  /* Banner */
+  main .home-banner {
+    min-height: 50vh;
+  }
+  main .home-banner img {
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+  main .home-banner .info-home-banner {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40rem;
+    border-radius: 20rem;
+    text-align: center;
+    box-shadow: 0 10rem 30rem rgba(0, 0, 0, 0.1);
+    left: auto;
+  }
+  main .home-banner .info-home-banner .view-info-banner {
+    margin: 0 auto;
+  }
+
+  /* Sub Banner */
+  main .home-sub-banner {
+    padding: 30rem;
+    gap: 20rem;
+  }
+  main .home-sub-banner .sub-banner-item {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  main .home-sub-banner .sub-banner-item .info-sub-banner-item {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+
+  /* About */
+  main .about-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50rem;
+  }
+  main .about-block img.about-image {
+    height: 400rem;
+  }
+  main .about-block .info-about {
+    position: relative;
+    width: 90%;
+    margin: -60rem auto 0;
+    background: #fff;
+    padding: 40rem;
+    border-radius: 20rem;
+    top: auto;
+    right: auto;
+    box-shadow: 0 5rem 20rem rgba(0, 0, 0, 0.05);
+  }
+  main .about-block .info-about p.description-about,
+  main
+    .about-block
+    .info-about
+    ul.list-info-about
+    li.info-item
+    .text-block
+    .detail-text {
+    font-size: 22rem !important;
+  }
+  main .about-block .info-about ul.list-info-about {
+    width: 100%;
+  }
+
+  /* Product */
+  .product {
+    width: 95%;
+    padding: 50rem 0;
+  }
+  .product ul.list-product {
+    justify-content: center;
+    gap: 15rem;
+  }
+  .product ul.list-product li.product-item {
+    flex-basis: 23%;
+    margin-bottom: 0;
+  }
+  .product ul.list-product li.product-item h4.product-name {
+    font-size: 18rem;
+  }
+
+  /* Review */
+  .review {
+    height: auto !important;
+    background-size: cover !important;
+  }
+  .review .info-review {
+    width: 90%;
+    margin-bottom: 40rem;
+  }
+  .review .data-review {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+  }
+  .review .data-review .data-review-item {
+    width: 23%;
+    height: auto;
+    border-radius: 20rem;
+    padding: 30rem 10rem;
+    border: 3rem solid #7eb693;
+    background-color: #f9f9f9;
+  }
+  .review .data-review .data-review-item .detail-data {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 0;
+  }
+  .review .data-review .data-review-item .detail-data .data-quantity {
+    font-size: 36rem;
+    margin-bottom: 5rem;
+  }
+  .review .data-review .data-review-item .detail-data .data-type {
+    font-size: 16rem;
+    text-align: center;
+  }
+
+  /* Econis */
+  .econis {
+    flex-direction: column;
+    gap: 0;
+  }
+  .econis .thumb {
+    width: 100%;
+    height: 350rem;
+  }
+  .econis .info-econis {
+    width: 90%;
+    padding: 50rem 0;
+  }
+  .econis .info-econis .list-econis .econis-item {
+    width: 100%;
+  }
+
+  /* Other Option */
+  .other-option {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    padding: 20rem;
+  }
+
+  .other-option .option-item {
+    width: 32%;
+    height: 400rem;
+    border-radius: 20rem;
+    background-size: cover !important;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .other-option .option-item .name-option {
+    position: absolute;
+    bottom: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #274c5b;
+    font-size: 18rem;
+    font-weight: 700;
+    padding: 25rem 10rem;
+    border-radius: 12rem;
+    box-shadow: 0 5rem 15rem rgba(224, 139, 139, 0.15);
+  }
+}
+
+/* 
+---------------------------------------------
+    MOBILE (Max-width: 768px) 
+---------------------------------------------
+*/
+
+@media screen and (max-width: 768px) {
+
+  /* Main Banner */
+  main .home-banner .info-home-banner {
+    top: 10rem;
+  }
+
+  /* Sub Banner */
+  main .home-sub-banner {
+    flex-direction: column;
+  }
+  main .home-sub-banner .sub-banner-item {
+    width: 100%;
+  }
+
+  /* About */
+  main .about-block .info-about {
+    margin-top: 20rem;
+    width: 95%;
+    padding: 25rem;
+  }
+  main .about-block .info-about p.description-about,
+  main
+    .about-block
+    .info-about
+    ul.list-info-about
+    li.info-item
+    .text-block
+    .detail-text {
+    font-size: 18rem !important;
+  }
+
+  /* Product */
+  .product ul.list-product {
+    gap: 10rem;
+    justify-content: space-between;
+  }
+  .product ul.list-product li.product-item {
+    flex-basis: 48%;
+    padding: 15rem 0;
+  }
+  .product ul.list-product li.product-item img.product-img {
+    margin-top: 20rem;
+    height: 160rem;
+  }
+  .product ul.list-product li.product-item h4.product-name {
+    font-size: 15rem;
+    padding: 0 26rem;
+  }
+
+  /* Review */
+  .review .data-review {
+    flex-wrap: wrap;
+    gap: 15rem;
+  }
+  .review .data-review .data-review-item {
+    width: 47%;
+    padding: 20rem 5rem;
+  }
+  .review .data-review .data-review-item .detail-data .data-quantity {
+    font-size: 30rem;
+  }
+
+  /* Offer */
+  .offer .offer-info {
+    width: 95%;
+  }
+  .offer .offer-info .text-offer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20rem;
+    margin-bottom: 30rem;
+  }
+  .offer .product-offer ul.list-product li.product-item {
+    flex-basis: 48%;
+  }
+
+  /* Other Option */
+  .other-option {
+    flex-direction: column;
+    gap: 25rem;
+  }
+
+  .other-option .option-item {
+    width: 100%;
+    height: 280rem;
+  }
+
+  .other-option .option-item .name-option {
+    font-size: 16rem;
+    padding: 12rem 20rem;
+    bottom: 25rem;
+    width: 70%;
+  }
+}
+
+/* 
+---------------------------------------------
+    MOBILE (Max-width: 480px) 
+---------------------------------------------
+*/
+
+@media screen and (max-width: 480px) {
+
+  /* Home Banner */
+  main .home-banner {
+    min-height: 40vh;
+  }
+  main .home-banner .info-home-banner {
+    top: 50rem;
+    width: 95%;
+    padding: 25rem 15rem;
+  }
+  main .home-banner .info-home-banner .title-info-banner {
+    font-size: 28rem;
+  }
+  main .home-banner .info-home-banner .detail-info-banner {
+    font-size: 38rem;
+  }
+
+  /* Product */
+  .product p.title-section {
+    font-size: 36rem;
+    text-align: center;
+  }
+  ul.list-product li.product-item span.product-category {
+    font-size: 11rem;
+    padding: 4rem 10rem;
+    top: 10rem;
+    left: 10rem;
+  }
+
+  ul.list-product li.product-item h4.product-name {
+    font-size: 15rem;
+    padding: 0 10rem;
+  }
+
+  ul.list-product li.product-item .product-more-info {
+    gap: 5rem;
+    margin: 0 10rem;
+    padding-top: 10rem;
+  }
+
+  ul.list-product li.product-item .product-more-info ul.votes li.star-vote{
+    font-size: 15rem;
+  }
+
+  /* Review */
+  .review .info-review p.title-review {
+    font-size: 32rem;
+    text-align: center;
+  }
+
+  /* Offer */
+  .offer .offer-info .text-offer .offer-info-text .title-offer {
+    font-size: 30rem;
+  }
+
+  .other-option .option-item .name-option {
+    width: 85%;
+    font-size: 15rem;
+  }
+}

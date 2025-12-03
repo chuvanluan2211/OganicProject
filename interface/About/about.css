@@ -1,0 +1,445 @@
+/* =========================================
+   GLOBAL RESET
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFFE5;
+    overflow-x: hidden; /* Ngăn thanh cuộn ngang không mong muốn */
+}
+
+/* =========================================
+   COMMON COMPONENTS
+   ========================================= */
+.heading-content {
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #7EB693;
+}
+
+.text-content {
+    margin-bottom: 12px;
+    color: #274C5B;
+    line-height: 1.2;
+}
+
+.body-text {
+    color: #525C60;
+    margin-bottom: 48px;
+    line-height: 1.65;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #274C5B;
+    border-radius: 16px;
+    gap: 10px;
+    padding: 20px 36px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 18px); /* Chữ co giãn nhẹ */
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #7EB693;
+}
+
+/* =========================================
+   SECTION: ABOUT
+   ========================================= */
+.about-section {
+    display: flex;
+    padding: 5.2% 6.25%; 
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.about-img {    
+    flex: 1; /* Chiếm 1 phần */
+    width: 100%; /* Đảm bảo khung linh hoạt */
+}
+
+.about-img img {
+    width: 100%; /* Ảnh luôn fill đầy khung chứa */
+    height: auto;
+    display: block;
+}
+
+.about-content {
+    flex: 1; /* Chiếm 1 phần (50-50 với ảnh) */
+    width: 100%;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    list-style: none;
+    flex-wrap: wrap; /* Cho phép rớt dòng */
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-basis: 48%; /* Chia đôi */
+    gap: 15px;
+    align-items: center;
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.icon-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-label {
+    font-weight: 500;
+    line-height: 1;
+    flex: 1;                 
+    display: block;          
+    width: 100%;              
+    word-wrap: break-word;   
+}
+/* =========================================
+   SECTION: FEATURES
+   ========================================= */
+.features-section {
+    background-color: #F9F8F8;
+    padding: 8.4% 12.6%;
+    width: 100%;
+}
+
+.features-top {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.features-left {
+    flex: 1;
+}
+
+.features-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.features-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px; /* Bo góc nếu cần */
+}
+
+.checkbox-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.heading {
+    display: inline-flex; /* Co theo nội dung */
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 49px;
+    background-color: #ECECEC;
+    margin-bottom: 12px;
+}
+
+.conten {
+    color: #525C60;
+    padding-left: 20px;
+    max-width: 90%;
+}
+
+/* Danh sách Features (Card) */
+.features-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.features-list {
+    display: flex;
+    width: 100%; 
+    max-width: 79%; 
+    justify-content: space-between; 
+    list-style: none;
+    flex-wrap: wrap; 
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 50px 36px;
+    width: calc(25% - 30px); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    margin-bottom: 12px;
+    color: #274C5B;
+}
+
+.card-text {
+    color: #525C60;
+    line-height: 1.6;
+}
+
+/* =========================================
+   SECTION: TEAM
+   ========================================= */
+.team-section {
+    padding: 8% 10%;
+    width: 100%;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Căn giữa block */
+}
+
+.members-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.members-item {
+    display: flex;
+    flex-direction: column;
+    /* Chia 3 cột: (100% - 2 gap) / 3 */
+    width: calc(33.33% - 20px); 
+    background-color: #F9F8F8;
+    border-radius: 30px;
+    overflow: hidden; /* Bo góc ảnh */
+    transition: transform 0.3s;
+}
+
+.members-item:hover {
+    transform: translateY(-10px); /* Hiệu ứng nổi lên khi hover */
+}
+
+.member-img {
+    width: 100%; /* Ảnh co giãn theo thẻ cha */
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 449/486; /* Giữ tỉ lệ ảnh gốc */
+}
+
+.member-info {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.name {
+    font-weight: 800;
+    color: #274C5B;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-family: 'Yellowtail', cursive;
+    font-size: 22px;
+    color: #7EB693;
+}
+
+.contact {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-contact {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* =========================================
+   SECTION: PRODUCTS
+   ========================================= */
+.products-section {
+    background-color: #274C5B;
+    padding: 8% 10%;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.products-section .text-content {
+    color: #FFFFFF;
+}
+
+.products-section .section-header {
+    margin-bottom: 40px;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 23px);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* Ảnh vuông */
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    object-fit: cover;
+}
+
+.product-name {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
+/* Tablet (Dưới 1024px) */
+@media (max-width: 1024px) {
+    .about-section, 
+    .features-section, 
+    .team-section, 
+    .products-section {
+        padding: 60px 5%; /* Giảm padding */
+    }
+
+    /* Team: Chuyển thành 2 cột */
+    .members-item {
+        width: calc(50% - 15px);
+    }
+
+    /* Products: Chuyển thành 2 cột */
+    .product-item {
+        width: calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+
+    /* Features Cards: Chuyển thành 2 cột */
+    .feature-card {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Mobile (Dưới 768px) */
+@media (max-width: 768px) {
+    /* About: Chồng lên nhau */
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .benefits-list {
+        justify-content: center; /* Căn giữa lợi ích */
+    }
+
+    .btn-primary {
+        width: 100%; /* Nút full chiều ngang */
+    }
+
+    /* Features Top: Chồng lên nhau */
+    .features-top {
+        flex-direction: column-reverse; /* Đảo ảnh lên trên hoặc dưới tùy ý */
+        text-align: center;
+    }
+    
+    .heading {
+        justify-content: center; /* Căn giữa tiêu đề con */
+        display: flex;
+        width: 100%;
+    }
+
+    .conten {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* Team: 1 Cột */
+    .members-item {
+        width: 100%;
+    }
+
+    /* Products: 1 Cột */
+    .product-item {
+        width: 100%;
+    }
+
+    /* Features Cards: 1 Cột */
+    .feature-card {
+        width: 100%;
+    }
+
+    .section-header {
+        padding: 0;
+    }
+    
+    .features-list, .products-list, .members-list {
+        gap: 40px; /* Tăng khoảng cách khi ở mobile cho thoáng */
+    }
+}
+
+/* Small Mobile (Dưới 480px) */
+@media (max-width: 480px) {
+    .benefit-item {
+        flex-basis: 100%; /* Lợi ích xếp dọc */
+    }
+    
+    .member-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
